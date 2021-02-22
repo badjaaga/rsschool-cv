@@ -20,4 +20,9 @@
       ```
     * **Experience**: Udemy platform (CSS, HTML, JS courses),
                        participating in UpSkillLab(EPAM) - 2020
+                       
+    * **Education**
+      * Grodno State Polytechnic College. "Civil and construction building" 2016
+      * Yanka Kupala State University of Grodno. "Civil and construction building" 5th course. year of graduation: 2022. 
+    * **English**: A2+
 	
