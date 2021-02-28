@@ -1,0 +1,176 @@
+/*reset*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: inherit;
+}
+
+/*utility components*/
+
+:root {
+    font-size: 62.5%;
+    --backgr-main: linear-gradient(135deg, #65dfc9 10%, #6cdbeb 100%);
+    --backgr-glass: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    --backgr-cards: linear-gradient(to left top, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+    --main-font-color: #001a1a;
+    --add-font-color: #026062;
+    --links-font-color: #03868f;
+    --text-color: #292b2f;
+}
+
+body {
+    background: var(--backgr-main);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*main styling*/
+
+/*fonts*/
+
+h1 {
+    font-size: 3rem;
+
+    color: var(--main-font-color);
+    opacity: 0.8;
+    text-shadow: 0.2rem 0.3rem 0.7rem #8f94a7;
+}
+
+h2,
+li[class*="achievements-board"] {
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--add-font-color);
+    opacity: 0.8;
+    text-shadow: 0.5rem 0.3rem 0.7rem #6e7288;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    color: var(--text-color);
+}
+
+p.slogan {
+    font-weight: 500;
+}
+
+a {
+    font-size: 1.2rem;
+
+    color: var(--links-font-color);
+}
+
+/*sections*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+
+    background: var(--backgr-main);
+}
+
+.glass {
+    display: flex;
+    z-index: 2;
+
+    min-height: 80vh;
+    width: 60%;
+
+
+    border-radius: 2rem;
+
+    background-color: white;
+    background: var(--backgr-glass);
+    backdrop-filter: blur(2rem);
+}
+
+.avatar {
+    width: 25rem;
+
+    border-radius: 5rem;
+}
+
+.dashboard {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 1rem;
+
+    text-align: center;
+
+    background: var(--backgr-glass);
+    border-radius: 2rem;
+}
+
+.achievements-board {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    margin: 5rem;
+}
+
+/*links*/
+
+section ul.contacts_list,
+div.achievements-board ul.achievements-board_list {
+    list-style: none;
+
+    text-align: left;
+}
+
+section ul.contacts_list li i {
+    vertical-align: middle;
+
+    color: var(--main-font-color);
+}
+
+a:link, a:visited {
+    display: inline-block;
+
+    margin: 0.5rem;
+
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    transform: scale(1.05, 1.05);
+}
+
+/*decorations*/
+
+.circle1, .circle2 {
+    position: absolute;
+
+    height: 20rem;
+    width: 20rem;
+
+    border-radius: 50%;
+
+    background: white;
+    background: var(--backgr-glass);
+
+}
+
+.circle1 {
+    top: 5%;
+    right: 15%;
+}
+
+.circle2 {
+    bottom: 5%;
+    left: 10%;
+}
