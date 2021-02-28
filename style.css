@@ -78,7 +78,7 @@ main {
     background: var(--backgr-main);
 }
 
-.glass {
+.wrapper {
     display: flex;
     z-index: 2;
 
